@@ -11,7 +11,7 @@
 
 ## Lire les données
 
-**Lire le contenu de la "table" des playlists :**
+**Lire le contenu des "tables" playlists & tracks :**
 
 ```SQL
 SELECT * FROM read_parquet('./*_playlists.parquet');
