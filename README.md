@@ -58,7 +58,7 @@ spotify D DESCRIBE v_tracks;
 │ duration_ms bigint  │
 │ position    integer │
 └─────────────────────┘
-Run Time (s): real 0.018 user 0.013256 sys 0.000000
+
 spotify D DESCRIBE v_playlists;
 ┌───────────────────────┐
 │      v_playlists      │
@@ -70,5 +70,5 @@ spotify D DESCRIBE v_playlists;
 │ num_followers integer │
 │ modified_at   bigint  │
 └───────────────────────┘
-Run Time (s): real 0.005 user 0.005393 sys 0.000000
+
 ```
