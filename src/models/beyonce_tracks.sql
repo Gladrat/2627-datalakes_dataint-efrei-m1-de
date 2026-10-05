@@ -1,0 +1,1 @@
+SELECT * FROM read_parquet('./silver/*_tracks.parquet') WHERE artist_name ILIKE "Beyoncé";

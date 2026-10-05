@@ -170,3 +170,449 @@ alter view "memory"."main"."demo__dbt_tmp" rename to "demo"
 [0m14:16:50.385021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec5f785770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feccc1e45f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feccc3abed0>]}
 [0m14:16:50.385202 [debug] [MainThread]: Flushing usage events
 [0m14:16:50.797762 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:44:45.387112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831e2566120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831e46707d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831e0d7b9d0>]}
+
+
+============================== 14:44:45.388964 | 44509532-67b6-47f9-938d-696e28827f0f ==============================
+[0m14:44:45.388964 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:44:45.389234 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'write_json': 'True', 'maximum_seed_size_mib': '1', 'log_format': 'default', 'debug': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'introspect': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt run', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'hints_enabled': 'True', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de', 'no_print': 'None', 'log_cache_events': 'False', 'printer_width': '80', 'log_path': '/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/logs', 'use_experimental_parser': 'False'}
+[0m14:44:45.545207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '44509532-67b6-47f9-938d-696e28827f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831e0cd56e0>]}
+[0m14:44:45.596284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '44509532-67b6-47f9-938d-696e28827f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831d4f9c8d0>]}
+[0m14:44:45.597727 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m14:44:45.630108 [debug] [MainThread]: checksum: 3113559d24aa517b694b83cbf993611527802e6b079e5d89f6e87d4c919140cd, vars: {}, profile: spotify_tp, target: dev, version: 1.12.5
+[0m14:44:45.672349 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m14:44:45.672658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '44509532-67b6-47f9-938d-696e28827f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831e0cda350>]}
+[0m14:44:46.257582 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.projet_spotify.staging
+- models.projet_spotify.intermediate
+- models.projet_spotify.marts
+[0m14:44:46.260107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '44509532-67b6-47f9-938d-696e28827f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831d4e9af30>]}
+[0m14:44:46.296644 [debug] [MainThread]: Wrote artifact WritableManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/manifest.json
+[0m14:44:46.298202 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/semantic_manifest.json
+[0m14:44:46.305040 [debug] [MainThread]: Wrote artifact OsiDocument to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/osi_document.json
+[0m14:44:46.309194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '44509532-67b6-47f9-938d-696e28827f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831d419a6d0>]}
+[0m14:44:46.309433 [info ] [MainThread]: Found 1 model, 500 macros
+[0m14:44:46.309610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '44509532-67b6-47f9-938d-696e28827f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831d4a06270>]}
+[0m14:44:46.310624 [info ] [MainThread]: 
+[0m14:44:46.310819 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:44:46.310960 [info ] [MainThread]: 
+[0m14:44:46.311238 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:44:46.311822 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_spotify'
+[0m14:44:46.329062 [debug] [ThreadPool]: Using duckdb connection "list_spotify"
+[0m14:44:46.329290 [debug] [ThreadPool]: On list_spotify: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "list_spotify"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"spotify"'
+    
+  
+  
+[0m14:44:46.329479 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:46.333467 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/warehouse/spotify.duckdb": No such file or directory
+[0m14:44:46.333703 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "list_spotify"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"spotify"'
+    
+  
+  
+[0m14:44:46.333859 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m14:44:46.333994 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:46.336282 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/warehouse/spotify.duckdb": No such file or directory
+[0m14:44:46.336505 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: macro list_schemas
+[0m14:44:46.336650 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m14:44:46.336785 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:46.339050 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:44:46.339245 [debug] [MainThread]: Connection 'list_spotify' was properly closed.
+[0m14:44:46.339415 [info ] [MainThread]: 
+[0m14:44:46.339590 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[0m14:44:46.339829 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+IO Error: Cannot open file "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/warehouse/spotify.duckdb": No such file or directory
+[0m14:44:46.349664 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/connections.py", line 110, in exception_handler
+    yield
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/sql/connections.py", line 147, in add_query
+    cursor = connection.handle.cursor()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/connections.py", line 68, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/environments/local.py", line 79, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 164, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/warehouse/spotify.duckdb": No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/connections.py", line 110, in exception_handler
+    yield
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/base/impl.py", line 1372, in execute_macro
+    result = macro_function(**kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt_common/clients/jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/clients/jinja.py", line 151, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 50, in macro
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/clients/jinja.py", line 151, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/clients/jinja.py", line 151, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 52, in macro
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/base/impl.py", line 523, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/connections.py", line 145, in execute
+    return super().execute(sql, auto_begin, fetch, limit)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/sql/connections.py", line 219, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/sql/connections.py", line 131, in add_query
+    with self.exception_handler(sql):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/geoffroy/.pyenv/versions/3.14.7/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/connections.py", line 117, in exception_handler
+    self.rollback_if_open()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+                            ^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/connections.py", line 68, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/environments/local.py", line 79, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 164, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/warehouse/spotify.duckdb": No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 295, in wrapper
+    return func(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 340, in wrapper
+    return func(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 387, in wrapper
+    return func(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 404, in wrapper
+    return func(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/cli/main.py", line 609, in run
+    results = task.run()
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/task/runnable.py", line 775, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/task/runnable.py", line 701, in execute_with_hooks
+    before_run_status = self.before_run(adapter, selected_uids)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/task/run.py", line 1313, in before_run
+    self.create_schemas(adapter, required_schemas)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/task/runnable.py", line 883, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+                                    ~~~~~~~~~~~~~~~~^^
+  File "/home/geoffroy/.pyenv/versions/3.14.7/lib/python3.14/concurrent/futures/_base.py", line 447, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/geoffroy/.pyenv/versions/3.14.7/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+    raise self._exception
+  File "/home/geoffroy/.pyenv/versions/3.14.7/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/home/geoffroy/.pyenv/versions/3.14.7/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt_common/utils/executor.py", line 20, in connected
+    return func(*args, **kwargs)
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/task/runnable.py", line 858, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/sql/impl.py", line 219, in list_schemas
+    results = self.execute_macro(LIST_SCHEMAS_MACRO_NAME, kwargs={"database": database})
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/base/impl.py", line 1371, in execute_macro
+    with self.connections.exception_handler(f"macro {macro_name}"):
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/.pyenv/versions/3.14.7/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/connections.py", line 117, in exception_handler
+    self.rollback_if_open()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+                            ^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/connections.py", line 68, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/environments/local.py", line 79, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/.venv/lib/python3.14/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 164, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/warehouse/spotify.duckdb": No such file or directory
+
+[0m14:44:46.350794 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.0219955, "process_in_blocks": "536", "process_kernel_time": 0.075986, "process_mem_max_rss": "177872", "process_out_blocks": "2400", "process_user_time": 1.767677}
+[0m14:44:46.351072 [debug] [MainThread]: Command `dbt run` failed at 14:44:46.351019 after 1.02 seconds
+[0m14:44:46.351273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831cc6e4a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831cc7d26d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7831cc7d28e0>]}
+[0m14:44:46.351458 [debug] [MainThread]: Flushing usage events
+[0m14:44:46.804920 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:45:02.585206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a85962120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a87a687d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a841779d0>]}
+
+
+============================== 14:45:02.587083 | 62bf4422-84bf-4856-bd6b-65e4fcd26902 ==============================
+[0m14:45:02.587083 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:45:02.587349 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'profiles_dir': '/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de', 'empty': 'False', 'invocation_command': 'dbt run', 'debug': 'False', 'version_check': 'True', 'hints_enabled': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'log_cache_events': 'False', 'log_path': '/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/logs', 'fail_fast': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error': 'None', 'introspect': 'True', 'partial_parse': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False'}
+[0m14:45:02.742290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '62bf4422-84bf-4856-bd6b-65e4fcd26902', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a840d16e0>]}
+[0m14:45:02.793373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '62bf4422-84bf-4856-bd6b-65e4fcd26902', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a783988d0>]}
+[0m14:45:02.794546 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m14:45:02.825598 [debug] [MainThread]: checksum: 3113559d24aa517b694b83cbf993611527802e6b079e5d89f6e87d4c919140cd, vars: {}, profile: spotify_tp, target: dev, version: 1.12.5
+[0m14:45:02.873471 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:45:02.873723 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:45:02.873868 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:45:02.877344 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.projet_spotify.intermediate
+- models.projet_spotify.staging
+- models.projet_spotify.marts
+[0m14:45:02.880002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '62bf4422-84bf-4856-bd6b-65e4fcd26902', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a840d6150>]}
+[0m14:45:02.925895 [debug] [MainThread]: Wrote artifact WritableManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/manifest.json
+[0m14:45:02.927368 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/semantic_manifest.json
+[0m14:45:02.934479 [debug] [MainThread]: Wrote artifact OsiDocument to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/osi_document.json
+[0m14:45:02.938664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '62bf4422-84bf-4856-bd6b-65e4fcd26902', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a77ebf6b0>]}
+[0m14:45:02.938906 [info ] [MainThread]: Found 1 model, 500 macros
+[0m14:45:02.939068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '62bf4422-84bf-4856-bd6b-65e4fcd26902', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a77ebbaf0>]}
+[0m14:45:02.940063 [info ] [MainThread]: 
+[0m14:45:02.940251 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:45:02.940422 [info ] [MainThread]: 
+[0m14:45:02.940704 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:45:02.941301 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_spotify'
+[0m14:45:02.962524 [debug] [ThreadPool]: Using duckdb connection "list_spotify"
+[0m14:45:02.962764 [debug] [ThreadPool]: On list_spotify: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "list_spotify"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"spotify"'
+    
+  
+  
+[0m14:45:02.962909 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:45:02.972559 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m14:45:02.973288 [debug] [ThreadPool]: On list_spotify: Close
+[0m14:45:02.973793 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_spotify, now create_spotify_main)
+[0m14:45:02.974068 [debug] [ThreadPool]: Creating schema "database: "spotify"
+schema: "main"
+"
+[0m14:45:02.978289 [debug] [ThreadPool]: Using duckdb connection "create_spotify_main"
+[0m14:45:02.978479 [debug] [ThreadPool]: On create_spotify_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "create_spotify_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='spotify'
+        and type != 'duckdb'
+    
+  
+[0m14:45:02.978617 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:45:02.979146 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:45:02.979763 [debug] [ThreadPool]: Using duckdb connection "create_spotify_main"
+[0m14:45:02.979924 [debug] [ThreadPool]: On create_spotify_main: BEGIN
+[0m14:45:02.980163 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:45:02.980308 [debug] [ThreadPool]: Using duckdb connection "create_spotify_main"
+[0m14:45:02.980437 [debug] [ThreadPool]: On create_spotify_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "create_spotify_main"} */
+
+    
+    
+        create schema if not exists "spotify"."main"
+    
+[0m14:45:02.980747 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:45:02.981148 [debug] [ThreadPool]: On create_spotify_main: COMMIT
+[0m14:45:02.981315 [debug] [ThreadPool]: Using duckdb connection "create_spotify_main"
+[0m14:45:02.981441 [debug] [ThreadPool]: On create_spotify_main: COMMIT
+[0m14:45:02.981775 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:45:02.982039 [debug] [ThreadPool]: On create_spotify_main: Close
+[0m14:45:02.983047 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_spotify_main, now list_spotify_main)
+[0m14:45:02.985590 [debug] [ThreadPool]: Using duckdb connection "list_spotify_main"
+[0m14:45:02.985766 [debug] [ThreadPool]: On list_spotify_main: BEGIN
+[0m14:45:02.985935 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:45:02.986287 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:45:02.986470 [debug] [ThreadPool]: Using duckdb connection "list_spotify_main"
+[0m14:45:02.986613 [debug] [ThreadPool]: On list_spotify_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "list_spotify_main"} */
+select
+      'spotify' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'spotify'
+  
+[0m14:45:02.987968 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:45:02.988564 [debug] [ThreadPool]: On list_spotify_main: ROLLBACK
+[0m14:45:02.988912 [debug] [ThreadPool]: On list_spotify_main: Close
+[0m14:45:02.989417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '62bf4422-84bf-4856-bd6b-65e4fcd26902', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a77cfc6d0>]}
+[0m14:45:02.989725 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:02.989880 [debug] [MainThread]: On master: BEGIN
+[0m14:45:02.990005 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:45:02.990304 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:45:02.990460 [debug] [MainThread]: On master: COMMIT
+[0m14:45:02.990587 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:02.990706 [debug] [MainThread]: On master: COMMIT
+[0m14:45:02.990934 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:45:02.991240 [debug] [MainThread]: On master: Close
+[0m14:45:02.992813 [debug] [Thread-1 (]: Began running node model.projet_spotify.demo
+[0m14:45:02.993111 [info ] [Thread-1 (]: 1 of 1 START sql view model main.demo .......................................... [RUN]
+[0m14:45:02.993350 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_spotify_main, now model.projet_spotify.demo)
+[0m14:45:02.993527 [debug] [Thread-1 (]: Began compiling node model.projet_spotify.demo
+[0m14:45:02.996119 [debug] [Thread-1 (]: Writing injected SQL for node "model.projet_spotify.demo"
+[0m14:45:02.996457 [debug] [Thread-1 (]: Began executing node model.projet_spotify.demo
+[0m14:45:03.015324 [debug] [Thread-1 (]: Writing runtime sql for node "model.projet_spotify.demo"
+[0m14:45:03.015727 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.demo"
+[0m14:45:03.015909 [debug] [Thread-1 (]: On model.projet_spotify.demo: BEGIN
+[0m14:45:03.016060 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:45:03.016584 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:45:03.016777 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.demo"
+[0m14:45:03.016931 [debug] [Thread-1 (]: On model.projet_spotify.demo: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.demo"} */
+
+  
+  create view "spotify"."main"."demo__dbt_tmp" as (
+    SELECT 1 + 1 AS result
+  );
+
+[0m14:45:03.017425 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:45:03.020179 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.demo"
+[0m14:45:03.020399 [debug] [Thread-1 (]: On model.projet_spotify.demo: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.demo"} */
+alter view "spotify"."main"."demo__dbt_tmp" rename to "demo"
+[0m14:45:03.020798 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:45:03.027140 [debug] [Thread-1 (]: On model.projet_spotify.demo: COMMIT
+[0m14:45:03.027341 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.demo"
+[0m14:45:03.027498 [debug] [Thread-1 (]: On model.projet_spotify.demo: COMMIT
+[0m14:45:03.029877 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:45:03.032682 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.demo"
+[0m14:45:03.032890 [debug] [Thread-1 (]: On model.projet_spotify.demo: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.demo"} */
+
+      drop view if exists "spotify"."main"."demo__dbt_backup" cascade
+    
+[0m14:45:03.033255 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:45:03.034793 [debug] [Thread-1 (]: On model.projet_spotify.demo: Close
+[0m14:45:03.035737 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '62bf4422-84bf-4856-bd6b-65e4fcd26902', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a772b84d0>]}
+[0m14:45:03.036078 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.demo ..................................... [[32mOK[0m in 0.04s]
+[0m14:45:03.036371 [debug] [Thread-1 (]: Finished running node model.projet_spotify.demo
+[0m14:45:03.037357 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:03.037533 [debug] [MainThread]: On master: BEGIN
+[0m14:45:03.037723 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:45:03.038066 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:45:03.038236 [debug] [MainThread]: On master: COMMIT
+[0m14:45:03.038365 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:45:03.038485 [debug] [MainThread]: On master: COMMIT
+[0m14:45:03.038733 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:45:03.038912 [debug] [MainThread]: On master: Close
+[0m14:45:03.039106 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:45:03.039224 [debug] [MainThread]: Connection 'model.projet_spotify.demo' was properly closed.
+[0m14:45:03.039358 [info ] [MainThread]: 
+[0m14:45:03.039501 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m14:45:03.039793 [debug] [MainThread]: Command end result
+[0m14:45:03.053126 [debug] [MainThread]: Wrote artifact WritableManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/manifest.json
+[0m14:45:03.054800 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/semantic_manifest.json
+[0m14:45:03.056097 [debug] [MainThread]: Wrote artifact OsiDocument to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/osi_document.json
+[0m14:45:03.059871 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/run_results.json
+[0m14:45:03.060045 [info ] [MainThread]: 
+[0m14:45:03.060248 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:45:03.060394 [info ] [MainThread]: 
+[0m14:45:03.060555 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m14:45:03.061102 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.5338331, "process_in_blocks": "0", "process_kernel_time": 0.068166, "process_mem_max_rss": "174976", "process_out_blocks": "2488", "process_user_time": 1.291144}
+[0m14:45:03.061363 [debug] [MainThread]: Command `dbt run` succeeded at 14:45:03.061311 after 0.53 seconds
+[0m14:45:03.061549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a77245c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a77f16a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790a773c3c50>]}
+[0m14:45:03.061722 [debug] [MainThread]: Flushing usage events
+[0m14:45:03.610276 [debug] [MainThread]: An error was encountered while trying to flush usage events
