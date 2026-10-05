@@ -26,3 +26,11 @@ SELECT * FROM read_parquet('./*_tracks.parquet');
 ```sql
 SELECT * FROM read_parquet('./*_tracks.parquet') WHERE artist_name LIKE 'Beyoncé';
 ```
+
+## Créer des vues Duckdb
+
+**Vue vers les playlists :**
+
+```sql
+CREATE VIEW v_playlists AS SELECT * FROM read_parquet('./*_playlists.parquet');
+```
