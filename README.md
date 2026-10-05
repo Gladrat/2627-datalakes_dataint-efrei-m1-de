@@ -178,3 +178,15 @@ Si on veut consulter les données dans le warehouse :
   - `intermediate` : Préparation de requêtes pour exploitation
   - `marts` : Agrégats métiers (business-level)
 - `notebook (pandas/duckdb)` → Lire les `marts` → Afficher un DataFrame / Data viz / etc.
+
+# Exercices
+
+- Créer une agrégation intermédiaire `int_album_stats`
+  - Grain : `(album_name, artist_name)`
+  - `nb_apparitions` : nombre total d'occurences
+  - `nb_tracks_distinctes` : nb de morceaux distincts
+  - `nb_playlists` : nb de playlists distinctes
+  - `avg_apparitions_par_tracks` : nb moyen d'occurence par morceau distinct
+  - `avg_duration_sec` : durée moyenne des occurences
+
+Attention : Les morceaux distincts correspondent uniquement aux morceaux présents dans le dataset.
