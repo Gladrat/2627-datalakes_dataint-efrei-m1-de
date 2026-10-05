@@ -1,0 +1,35 @@
+[0m14:14:23.632347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f796100e120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7962f287d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f795f5939d0>]}
+
+
+============================== 14:14:23.668536 | 1d0c235a-b642-4b3c-a333-7b7f7e9839e7 ==============================
+[0m14:14:23.668536 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:14:23.668823 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'quiet': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'use_experimental_parser': 'False', 'log_path': '/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/logs', 'debug': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'profiles_dir': '/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'use_colors': 'True', 'write_json': 'True', 'hints_enabled': 'True', 'fail_fast': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'target_path': 'None', 'warn_error': 'None', 'introspect': 'True', 'invocation_command': 'dbt run'}
+[0m14:14:23.891581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1d0c235a-b642-4b3c-a333-7b7f7e9839e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f795f6569e0>]}
+[0m14:14:23.942665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1d0c235a-b642-4b3c-a333-7b7f7e9839e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f795f34c7c0>]}
+[0m14:14:23.945267 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m14:14:23.982494 [debug] [MainThread]: checksum: 3113559d24aa517b694b83cbf993611527802e6b079e5d89f6e87d4c919140cd, vars: {}, profile: spotify_tp, target: dev, version: 1.12.5
+[0m14:14:23.982835 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:14:23.983024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1d0c235a-b642-4b3c-a333-7b7f7e9839e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f795f532750>]}
+[0m14:14:24.431256 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.projet_spotify.intermediate
+- models.projet_spotify.staging
+- models.projet_spotify.marts
+[0m14:14:24.433523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1d0c235a-b642-4b3c-a333-7b7f7e9839e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f795f0c5e50>]}
+[0m14:14:24.459570 [debug] [MainThread]: Wrote artifact WritableManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/manifest.json
+[0m14:14:24.463828 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/semantic_manifest.json
+[0m14:14:24.495041 [debug] [MainThread]: Wrote artifact OsiDocument to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/osi_document.json
+[0m14:14:24.522895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1d0c235a-b642-4b3c-a333-7b7f7e9839e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7951384050>]}
+[0m14:14:24.523157 [info ] [MainThread]: Found 500 macros
+[0m14:14:24.523330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1d0c235a-b642-4b3c-a333-7b7f7e9839e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f795f469bf0>]}
+[0m14:14:24.524231 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m14:14:24.524580 [debug] [MainThread]: Command end result
+[0m14:14:24.538093 [debug] [MainThread]: Wrote artifact WritableManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/manifest.json
+[0m14:14:24.539473 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/semantic_manifest.json
+[0m14:14:24.540704 [debug] [MainThread]: Wrote artifact OsiDocument to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/osi_document.json
+[0m14:14:24.542619 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/run_results.json
+[0m14:14:24.543873 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.97287047, "process_in_blocks": "215896", "process_kernel_time": 0.140955, "process_mem_max_rss": "166716", "process_out_blocks": "5752", "process_user_time": 1.631058}
+[0m14:14:24.544158 [debug] [MainThread]: Command `dbt run` succeeded at 14:14:24.544101 after 0.97 seconds
+[0m14:14:24.544361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f79533d9fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f795130fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f795130f960>]}
+[0m14:14:24.544544 [debug] [MainThread]: Flushing usage events
+[0m14:14:24.978875 [debug] [MainThread]: An error was encountered while trying to flush usage events
