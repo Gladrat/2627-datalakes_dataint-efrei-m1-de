@@ -2358,3 +2358,301 @@ alter view "spotify"."main"."tracks_stats__dbt_tmp" rename to "tracks_stats"
 [0m15:01:13.871832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700fa39dc910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700f9016e450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700f9012bf50>]}
 [0m15:01:13.872010 [debug] [MainThread]: Flushing usage events
 [0m15:01:14.405566 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:16:54.760421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e0aa326120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e0ac1307d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e0a88739d0>]}
+
+
+============================== 15:16:54.762340 | ed5a4229-a3ed-4fec-9060-add0bc3fc7a1 ==============================
+[0m15:16:54.762340 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:16:54.762617 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'hints_enabled': 'True', 'partial_parse': 'True', 'quiet': 'False', 'static_parser': 'True', 'no_print': 'None', 'introspect': 'True', 'warn_error': 'None', 'log_format': 'default', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'empty': 'False', 'version_check': 'True', 'debug': 'False', 'printer_width': '80', 'profiles_dir': '/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'log_path': '/home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/logs', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m15:16:54.917947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e0a87cd6e0>]}
+[0m15:16:54.969128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e0a87008d0>]}
+[0m15:16:54.970252 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m15:16:55.000877 [debug] [MainThread]: checksum: 3113559d24aa517b694b83cbf993611527802e6b079e5d89f6e87d4c919140cd, vars: {}, profile: spotify_tp, target: dev, version: 1.12.5
+[0m15:16:55.058119 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m15:16:55.058417 [debug] [MainThread]: Partial parsing: added file: projet_spotify://src/models/staging/stg_tracks.sql
+[0m15:16:55.058584 [debug] [MainThread]: Partial parsing: added file: projet_spotify://src/models/drake_tracks.sql
+[0m15:16:55.058758 [debug] [MainThread]: Partial parsing: updated file: projet_spotify://src/models/beyonce_tracks.sql
+[0m15:16:55.267806 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.projet_spotify.marts
+- models.projet_spotify.intermediate
+[0m15:16:55.270495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e09c658850>]}
+[0m15:16:55.321618 [debug] [MainThread]: Wrote artifact WritableManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/manifest.json
+[0m15:16:55.323198 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/semantic_manifest.json
+[0m15:16:55.330177 [debug] [MainThread]: Wrote artifact OsiDocument to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/osi_document.json
+[0m15:16:55.334460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e09a56ab70>]}
+[0m15:16:55.334704 [info ] [MainThread]: Found 4 models, 2 sources, 500 macros
+[0m15:16:55.334877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e09a5765f0>]}
+[0m15:16:55.336012 [info ] [MainThread]: 
+[0m15:16:55.336218 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:16:55.336371 [info ] [MainThread]: 
+[0m15:16:55.336688 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:16:55.339689 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_spotify'
+[0m15:16:55.358329 [debug] [ThreadPool]: Using duckdb connection "list_spotify"
+[0m15:16:55.358554 [debug] [ThreadPool]: On list_spotify: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "list_spotify"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"spotify"'
+    
+  
+  
+[0m15:16:55.358711 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:16:55.365763 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m15:16:55.366434 [debug] [ThreadPool]: On list_spotify: Close
+[0m15:16:55.366895 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_spotify, now create_spotify_main)
+[0m15:16:55.367144 [debug] [ThreadPool]: Creating schema "database: "spotify"
+schema: "main"
+"
+[0m15:16:55.372384 [debug] [ThreadPool]: Using duckdb connection "create_spotify_main"
+[0m15:16:55.372580 [debug] [ThreadPool]: On create_spotify_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "create_spotify_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='spotify'
+        and type != 'duckdb'
+    
+  
+[0m15:16:55.372727 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:16:55.373265 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:16:55.373902 [debug] [ThreadPool]: Using duckdb connection "create_spotify_main"
+[0m15:16:55.374079 [debug] [ThreadPool]: On create_spotify_main: BEGIN
+[0m15:16:55.374554 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:16:55.374762 [debug] [ThreadPool]: Using duckdb connection "create_spotify_main"
+[0m15:16:55.374906 [debug] [ThreadPool]: On create_spotify_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "create_spotify_main"} */
+
+    
+    
+        create schema if not exists "spotify"."main"
+    
+[0m15:16:55.375253 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:16:55.375643 [debug] [ThreadPool]: On create_spotify_main: COMMIT
+[0m15:16:55.375799 [debug] [ThreadPool]: Using duckdb connection "create_spotify_main"
+[0m15:16:55.375936 [debug] [ThreadPool]: On create_spotify_main: COMMIT
+[0m15:16:55.376284 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:16:55.376531 [debug] [ThreadPool]: On create_spotify_main: Close
+[0m15:16:55.377426 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_spotify_main, now list_spotify_main)
+[0m15:16:55.380273 [debug] [ThreadPool]: Using duckdb connection "list_spotify_main"
+[0m15:16:55.380454 [debug] [ThreadPool]: On list_spotify_main: BEGIN
+[0m15:16:55.380589 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:16:55.380960 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:16:55.381176 [debug] [ThreadPool]: Using duckdb connection "list_spotify_main"
+[0m15:16:55.381316 [debug] [ThreadPool]: On list_spotify_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "connection_name": "list_spotify_main"} */
+select
+      'spotify' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'spotify'
+  
+[0m15:16:55.382719 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:16:55.383394 [debug] [ThreadPool]: On list_spotify_main: ROLLBACK
+[0m15:16:55.383696 [debug] [ThreadPool]: On list_spotify_main: Close
+[0m15:16:55.384416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e09a5d4c80>]}
+[0m15:16:55.384680 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:16:55.384830 [debug] [MainThread]: On master: BEGIN
+[0m15:16:55.384959 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:16:55.385337 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:16:55.385553 [debug] [MainThread]: On master: COMMIT
+[0m15:16:55.385702 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:16:55.385860 [debug] [MainThread]: On master: COMMIT
+[0m15:16:55.386145 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:16:55.386296 [debug] [MainThread]: On master: Close
+[0m15:16:55.387652 [debug] [Thread-1 (]: Began running node model.projet_spotify.drake_tracks
+[0m15:16:55.387941 [info ] [Thread-1 (]: 1 of 4 START sql view model main.drake_tracks .................................. [RUN]
+[0m15:16:55.388209 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_spotify_main, now model.projet_spotify.drake_tracks)
+[0m15:16:55.388379 [debug] [Thread-1 (]: Began compiling node model.projet_spotify.drake_tracks
+[0m15:16:55.391823 [debug] [Thread-1 (]: Writing injected SQL for node "model.projet_spotify.drake_tracks"
+[0m15:16:55.393454 [debug] [Thread-1 (]: Began executing node model.projet_spotify.drake_tracks
+[0m15:16:55.410238 [debug] [Thread-1 (]: Writing runtime sql for node "model.projet_spotify.drake_tracks"
+[0m15:16:55.411105 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.drake_tracks"
+[0m15:16:55.411317 [debug] [Thread-1 (]: On model.projet_spotify.drake_tracks: BEGIN
+[0m15:16:55.411479 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:16:55.412174 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:55.412356 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.drake_tracks"
+[0m15:16:55.412507 [debug] [Thread-1 (]: On model.projet_spotify.drake_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.drake_tracks"} */
+
+  
+  create view "spotify"."main"."drake_tracks__dbt_tmp" as (
+    SELECT * FROM read_parquet('./silver/*_tracks.parquet') WHERE artist_name ILIKE 'Drake'
+  );
+
+[0m15:16:55.417167 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:16:55.420023 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.drake_tracks"
+[0m15:16:55.420254 [debug] [Thread-1 (]: On model.projet_spotify.drake_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.drake_tracks"} */
+alter view "spotify"."main"."drake_tracks__dbt_tmp" rename to "drake_tracks"
+[0m15:16:55.420624 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.426887 [debug] [Thread-1 (]: On model.projet_spotify.drake_tracks: COMMIT
+[0m15:16:55.427085 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.drake_tracks"
+[0m15:16:55.427266 [debug] [Thread-1 (]: On model.projet_spotify.drake_tracks: COMMIT
+[0m15:16:55.429210 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:16:55.431976 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.drake_tracks"
+[0m15:16:55.432177 [debug] [Thread-1 (]: On model.projet_spotify.drake_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.drake_tracks"} */
+
+      drop view if exists "spotify"."main"."drake_tracks__dbt_backup" cascade
+    
+[0m15:16:55.432572 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.433912 [debug] [Thread-1 (]: On model.projet_spotify.drake_tracks: Close
+[0m15:16:55.434979 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e09a593050>]}
+[0m15:16:55.435364 [info ] [Thread-1 (]: 1 of 4 OK created sql view model main.drake_tracks ............................. [[32mOK[0m in 0.05s]
+[0m15:16:55.435662 [debug] [Thread-1 (]: Finished running node model.projet_spotify.drake_tracks
+[0m15:16:55.435854 [debug] [Thread-1 (]: Began running node model.projet_spotify.stg_tracks
+[0m15:16:55.436058 [info ] [Thread-1 (]: 2 of 4 START sql view model main.stg_tracks .................................... [RUN]
+[0m15:16:55.436278 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.projet_spotify.drake_tracks, now model.projet_spotify.stg_tracks)
+[0m15:16:55.436626 [debug] [Thread-1 (]: Began compiling node model.projet_spotify.stg_tracks
+[0m15:16:55.437714 [debug] [Thread-1 (]: Writing injected SQL for node "model.projet_spotify.stg_tracks"
+[0m15:16:55.438272 [debug] [Thread-1 (]: Began executing node model.projet_spotify.stg_tracks
+[0m15:16:55.439637 [debug] [Thread-1 (]: Writing runtime sql for node "model.projet_spotify.stg_tracks"
+[0m15:16:55.440107 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.stg_tracks"
+[0m15:16:55.440273 [debug] [Thread-1 (]: On model.projet_spotify.stg_tracks: BEGIN
+[0m15:16:55.440418 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:16:55.440784 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.440953 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.stg_tracks"
+[0m15:16:55.441122 [debug] [Thread-1 (]: On model.projet_spotify.stg_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.stg_tracks"} */
+
+  
+  create view "spotify"."main"."stg_tracks__dbt_tmp" as (
+    SELECT *,
+ROUND((duration_ms / 60000), 2) as duration_min
+FROM read_parquet('./silver/*_tracks.parquet')
+  );
+
+[0m15:16:55.444832 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:16:55.445892 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.stg_tracks"
+[0m15:16:55.446090 [debug] [Thread-1 (]: On model.projet_spotify.stg_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.stg_tracks"} */
+alter view "spotify"."main"."stg_tracks__dbt_tmp" rename to "stg_tracks"
+[0m15:16:55.446421 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.447088 [debug] [Thread-1 (]: On model.projet_spotify.stg_tracks: COMMIT
+[0m15:16:55.447252 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.stg_tracks"
+[0m15:16:55.447400 [debug] [Thread-1 (]: On model.projet_spotify.stg_tracks: COMMIT
+[0m15:16:55.448919 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:55.449627 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.stg_tracks"
+[0m15:16:55.449792 [debug] [Thread-1 (]: On model.projet_spotify.stg_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.stg_tracks"} */
+
+      drop view if exists "spotify"."main"."stg_tracks__dbt_backup" cascade
+    
+[0m15:16:55.450101 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.450721 [debug] [Thread-1 (]: On model.projet_spotify.stg_tracks: Close
+[0m15:16:55.451020 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e09811b5f0>]}
+[0m15:16:55.451330 [info ] [Thread-1 (]: 2 of 4 OK created sql view model main.stg_tracks ............................... [[32mOK[0m in 0.01s]
+[0m15:16:55.451592 [debug] [Thread-1 (]: Finished running node model.projet_spotify.stg_tracks
+[0m15:16:55.451771 [debug] [Thread-1 (]: Began running node model.projet_spotify.tracks_stats
+[0m15:16:55.451966 [info ] [Thread-1 (]: 3 of 4 START sql view model main.tracks_stats .................................. [RUN]
+[0m15:16:55.452172 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.projet_spotify.stg_tracks, now model.projet_spotify.tracks_stats)
+[0m15:16:55.452459 [debug] [Thread-1 (]: Began compiling node model.projet_spotify.tracks_stats
+[0m15:16:55.453491 [debug] [Thread-1 (]: Writing injected SQL for node "model.projet_spotify.tracks_stats"
+[0m15:16:55.453883 [debug] [Thread-1 (]: Began executing node model.projet_spotify.tracks_stats
+[0m15:16:55.455463 [debug] [Thread-1 (]: Writing runtime sql for node "model.projet_spotify.tracks_stats"
+[0m15:16:55.455733 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.tracks_stats"
+[0m15:16:55.455892 [debug] [Thread-1 (]: On model.projet_spotify.tracks_stats: BEGIN
+[0m15:16:55.456035 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:16:55.456359 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.456525 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.tracks_stats"
+[0m15:16:55.456669 [debug] [Thread-1 (]: On model.projet_spotify.tracks_stats: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.tracks_stats"} */
+
+  
+  create view "spotify"."main"."tracks_stats__dbt_tmp" as (
+    SELECT COUNT(*)
+FROM read_parquet('./silver/*_tracks.parquet')
+  );
+
+[0m15:16:55.459903 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:16:55.460932 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.tracks_stats"
+[0m15:16:55.461104 [debug] [Thread-1 (]: On model.projet_spotify.tracks_stats: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.tracks_stats"} */
+alter view "spotify"."main"."tracks_stats" rename to "tracks_stats__dbt_backup"
+[0m15:16:55.461426 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.462395 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.tracks_stats"
+[0m15:16:55.462566 [debug] [Thread-1 (]: On model.projet_spotify.tracks_stats: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.tracks_stats"} */
+alter view "spotify"."main"."tracks_stats__dbt_tmp" rename to "tracks_stats"
+[0m15:16:55.462910 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.464931 [debug] [Thread-1 (]: On model.projet_spotify.tracks_stats: COMMIT
+[0m15:16:55.465140 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.tracks_stats"
+[0m15:16:55.465298 [debug] [Thread-1 (]: On model.projet_spotify.tracks_stats: COMMIT
+[0m15:16:55.466662 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:55.467392 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.tracks_stats"
+[0m15:16:55.467555 [debug] [Thread-1 (]: On model.projet_spotify.tracks_stats: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.tracks_stats"} */
+
+      drop view if exists "spotify"."main"."tracks_stats__dbt_backup" cascade
+    
+[0m15:16:55.468815 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:55.469468 [debug] [Thread-1 (]: On model.projet_spotify.tracks_stats: Close
+[0m15:16:55.469753 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e09c90ff70>]}
+[0m15:16:55.470116 [info ] [Thread-1 (]: 3 of 4 OK created sql view model main.tracks_stats ............................. [[32mOK[0m in 0.02s]
+[0m15:16:55.470382 [debug] [Thread-1 (]: Finished running node model.projet_spotify.tracks_stats
+[0m15:16:55.470585 [debug] [Thread-1 (]: Began running node model.projet_spotify.beyonce_tracks
+[0m15:16:55.470790 [info ] [Thread-1 (]: 4 of 4 START sql view model main.beyonce_tracks ................................ [RUN]
+[0m15:16:55.471003 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.projet_spotify.tracks_stats, now model.projet_spotify.beyonce_tracks)
+[0m15:16:55.471156 [debug] [Thread-1 (]: Began compiling node model.projet_spotify.beyonce_tracks
+[0m15:16:55.472029 [debug] [Thread-1 (]: Writing injected SQL for node "model.projet_spotify.beyonce_tracks"
+[0m15:16:55.472462 [debug] [Thread-1 (]: Began executing node model.projet_spotify.beyonce_tracks
+[0m15:16:55.474071 [debug] [Thread-1 (]: Writing runtime sql for node "model.projet_spotify.beyonce_tracks"
+[0m15:16:55.474398 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.beyonce_tracks"
+[0m15:16:55.474570 [debug] [Thread-1 (]: On model.projet_spotify.beyonce_tracks: BEGIN
+[0m15:16:55.474716 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:16:55.475064 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.475227 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.beyonce_tracks"
+[0m15:16:55.475372 [debug] [Thread-1 (]: On model.projet_spotify.beyonce_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.beyonce_tracks"} */
+
+  
+  create view "spotify"."main"."beyonce_tracks__dbt_tmp" as (
+    SELECT * FROM "spotify"."main"."stg_tracks" WHERE artist_name ILIKE 'Beyoncé'
+  );
+
+[0m15:16:55.478821 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:16:55.480054 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.beyonce_tracks"
+[0m15:16:55.480244 [debug] [Thread-1 (]: On model.projet_spotify.beyonce_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.beyonce_tracks"} */
+alter view "spotify"."main"."beyonce_tracks" rename to "beyonce_tracks__dbt_backup"
+[0m15:16:55.480760 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.481873 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.beyonce_tracks"
+[0m15:16:55.482059 [debug] [Thread-1 (]: On model.projet_spotify.beyonce_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.beyonce_tracks"} */
+alter view "spotify"."main"."beyonce_tracks__dbt_tmp" rename to "beyonce_tracks"
+[0m15:16:55.482434 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:16:55.483198 [debug] [Thread-1 (]: On model.projet_spotify.beyonce_tracks: COMMIT
+[0m15:16:55.483375 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.beyonce_tracks"
+[0m15:16:55.483525 [debug] [Thread-1 (]: On model.projet_spotify.beyonce_tracks: COMMIT
+[0m15:16:55.484919 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:55.485647 [debug] [Thread-1 (]: Using duckdb connection "model.projet_spotify.beyonce_tracks"
+[0m15:16:55.485813 [debug] [Thread-1 (]: On model.projet_spotify.beyonce_tracks: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "spotify_tp", "target_name": "dev", "node_id": "model.projet_spotify.beyonce_tracks"} */
+
+      drop view if exists "spotify"."main"."beyonce_tracks__dbt_backup" cascade
+    
+[0m15:16:55.486985 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:55.487630 [debug] [Thread-1 (]: On model.projet_spotify.beyonce_tracks: Close
+[0m15:16:55.487933 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed5a4229-a3ed-4fec-9060-add0bc3fc7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e098212d50>]}
+[0m15:16:55.488234 [info ] [Thread-1 (]: 4 of 4 OK created sql view model main.beyonce_tracks ........................... [[32mOK[0m in 0.02s]
+[0m15:16:55.488541 [debug] [Thread-1 (]: Finished running node model.projet_spotify.beyonce_tracks
+[0m15:16:55.489454 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:16:55.489645 [debug] [MainThread]: On master: BEGIN
+[0m15:16:55.489779 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:16:55.490142 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:16:55.490301 [debug] [MainThread]: On master: COMMIT
+[0m15:16:55.490427 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:16:55.490549 [debug] [MainThread]: On master: COMMIT
+[0m15:16:55.490776 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:16:55.490938 [debug] [MainThread]: On master: Close
+[0m15:16:55.491140 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:16:55.491264 [debug] [MainThread]: Connection 'model.projet_spotify.beyonce_tracks' was properly closed.
+[0m15:16:55.491425 [info ] [MainThread]: 
+[0m15:16:55.491574 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.15 seconds (0.15s).
+[0m15:16:55.492012 [debug] [MainThread]: Command end result
+[0m15:16:55.505999 [debug] [MainThread]: Wrote artifact WritableManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/manifest.json
+[0m15:16:55.507589 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/semantic_manifest.json
+[0m15:16:55.508846 [debug] [MainThread]: Wrote artifact OsiDocument to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/osi_document.json
+[0m15:16:55.512801 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/geoffroy/projects/students/2627-datalakes_dataint-efrei-m1-de/target/run_results.json
+[0m15:16:55.512987 [info ] [MainThread]: 
+[0m15:16:55.513181 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:16:55.513328 [info ] [MainThread]: 
+[0m15:16:55.513493 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m15:16:55.514053 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.8120695, "process_in_blocks": "16", "process_kernel_time": 0.100094, "process_mem_max_rss": "184280", "process_out_blocks": "3784", "process_user_time": 1.541456}
+[0m15:16:55.514349 [debug] [MainThread]: Command `dbt run` succeeded at 15:16:55.514289 after 0.81 seconds
+[0m15:16:55.514546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e0a890c050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e0a8c22660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e0a8bc5f70>]}
+[0m15:16:55.514731 [debug] [MainThread]: Flushing usage events
+[0m15:16:55.990584 [debug] [MainThread]: An error was encountered while trying to flush usage events
