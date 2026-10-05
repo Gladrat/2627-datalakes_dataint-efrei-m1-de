@@ -20,3 +20,9 @@ SELECT * FROM read_parquet('./*_playlists.parquet');
 ```SQL
 SELECT * FROM read_parquet('./*_tracks.parquet');
 ```
+
+**Voir les tracks de Beyoncé :**
+
+```sql
+SELECT * FROM read_parquet('./*_tracks.parquet') WHERE artist_name LIKE 'Beyoncé';
+```
