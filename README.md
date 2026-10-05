@@ -126,3 +126,30 @@ spotify D DESCRIBE v_tracks_enriched;
 │ duration_min bigint │
 └─────────────────────┘
 ```
+
+# `view` → Non persisté (alias vers les données)
+
+Toutes les opérations sont refaites à chaque appel de la vue. S'il y a des opération coûteuses (ex: multi jointures) alors c'est chiant.
+
+# `table` → Les données sont persistées
+
+# La question de l'Amour
+
+```sql
+CREATE VIEW romantic_playlists AS
+            SELECT playlist_id, playlist_name
+            FROM v_playlists
+            WHERE playlist_name ILIKE '%love%';
+```
+
+```sql
+SELECT
+    t.track_uri, t.track_name, t.artist_name,
+    COUNT(DISTINCT(t.playlist_id)) AS nb_playlists
+    FROM v_tracks t
+    JOIN romantic_playlists rp
+        ON t.playlist_id = rp.playlist_id
+    GROUP BY t.track_uri, t.track_name, t.artist_name
+    ORDER BY nb_playlists DESC
+    LIMIT 20;
+``` 
