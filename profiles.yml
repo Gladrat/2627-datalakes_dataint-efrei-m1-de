@@ -4,3 +4,4 @@ spotify_tp:
   outputs:
     dev:
       type: duckdb
+      path: warehouse/spotify.duckdb
