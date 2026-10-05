@@ -153,3 +153,17 @@ SELECT
     ORDER BY nb_playlists DESC
     LIMIT 20;
 ``` 
+
+# DBT
+
+- Setup dbt : fichier yaml
+- Ecrire les modèles dans ``./src/models``
+  - Le nom du fichier sql → le nom de la table
+- ``dbt run`` **à la racine du projet**
+
+Si on veut consulter les données dans le warehouse :
+
+- **A la racine du projet :**
+  - `duckdb wharehouse/spotify.duckdb`
+  - SELECT...
+  - .table
