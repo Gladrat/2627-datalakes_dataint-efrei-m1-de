@@ -1,1 +1,1 @@
-SELECT * FROM read_parquet('./silver/*_tracks.parquet') WHERE artist_name ILIKE 'Beyoncé'
+SELECT * FROM {{ source('silver', 'tracks') }} WHERE artist_name ILIKE 'Beyoncé'
