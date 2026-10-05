@@ -6,4 +6,4 @@ SELECT
         ON t.playlist_id = rp.playlist_id
     GROUP BY t.track_uri, t.track_name, t.artist_name
     ORDER BY nb_playlists DESC
-    LIMIT 20;
+    LIMIT 20
