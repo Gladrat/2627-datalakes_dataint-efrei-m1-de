@@ -1,0 +1,5 @@
+.venv
+bronze
+silver
+.claude
+*.parquet
