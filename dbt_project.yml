@@ -1,0 +1,10 @@
+name: 'projet_spotify'
+version: '1.0.0'
+profile: 'spotify_tp'
+
+model-paths: ['src/models']
+
+models:
+  projet_spotify:
+    stating:
+      +materialized: view
