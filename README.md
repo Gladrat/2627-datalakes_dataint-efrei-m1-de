@@ -29,8 +29,15 @@ SELECT * FROM read_parquet('./*_tracks.parquet') WHERE artist_name LIKE 'Beyonc�
 
 ## Créer des vues Duckdb
 
-**Vue vers les playlists :**
+Les vues ne sont que des "raccourcis" vers les fichiers parquet. Les données ne sont PAS stockées dans duckdb.
+
+**Vue vers les playlists & tracks :**
 
 ```sql
 CREATE VIEW v_playlists AS SELECT * FROM read_parquet('./*_playlists.parquet');
 ```
+
+```sql
+CREATE VIEW v_tracks AS SELECT * FROM read_parquet('./*_tracks.parquet');
+```
+
