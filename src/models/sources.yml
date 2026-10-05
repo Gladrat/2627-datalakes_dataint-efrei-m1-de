@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: silver
+    tables:
+      - name: playlists
+        meta:
+          external_location: "read_parquet('./silver/*_playlists.parquet')"
+
+        - name: playlists
+        meta:
+          external_location: "read_parquet('./silver/*_tracks.parquet')"
