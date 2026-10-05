@@ -78,4 +78,31 @@ spotify D DESCRIBE v_playlists;
 **Exercice : Quelles playlists ont la plus forte audience ?**
 
 ```sql
+SELECT playlist_name,
+       num_followers,
+       num_tracks
+  FROM v_playlists
+  ORDER BY num_followers DESC
+  LIMIT 10;
+┌────────────────────┬───────────────┬────────────┐
+│   playlist_name    │ num_followers │ num_tracks │
+│      varchar       │     int32     │   int32    │
+├────────────────────┼───────────────┼────────────┤
+│ That's What I Like │         71643 │         39 │
+│ Breaking Bad       │         53519 │        106 │
+│ One Tree Hill      │         45942 │        111 │
+│ My Little Pony     │         31539 │         85 │
+│ Q1                 │         27830 │         81 │
+│ Jack's Playlist    │         23500 │         29 │
+│ Rock Hits          │         22102 │         56 │
+│ TOP POP            │         15842 │         52 │
+│ FARRUKO            │         15123 │         13 │
+│ Wiz Khalifa        │         14812 │        115 │
+└────────────────────┴───────────────┴────────────┘
+  10 rows                               3 columns
 ```
+
+**Exercice : Enrichir les données**
+
+- Transformer la donnée `duration_ms` en minutes
+- Stocker cette nouvelle donnée dans une vue complète `v_tracks_enriched`
