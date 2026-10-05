@@ -3,3 +3,5 @@ bronze
 silver
 .claude
 *.parquet
+target
+log
