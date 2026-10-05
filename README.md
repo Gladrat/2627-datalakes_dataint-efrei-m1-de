@@ -41,3 +41,34 @@ CREATE VIEW v_playlists AS SELECT * FROM read_parquet('./*_playlists.parquet');
 CREATE VIEW v_tracks AS SELECT * FROM read_parquet('./*_tracks.parquet');
 ```
 
+## Décrire les schémas des données (des vues)
+
+```sql
+spotify D DESCRIBE v_tracks;
+┌─────────────────────┐
+│      v_tracks       │
+│                     │
+│ playlist_id integer │
+│ track_uri   varchar │
+│ track_name  varchar │
+│ artist_name varchar │
+│ artist_uri  varchar │
+│ album_name  varchar │
+│ album_uri   varchar │
+│ duration_ms bigint  │
+│ position    integer │
+└─────────────────────┘
+Run Time (s): real 0.018 user 0.013256 sys 0.000000
+spotify D DESCRIBE v_playlists;
+┌───────────────────────┐
+│      v_playlists      │
+│                       │
+│ playlist_id   integer │
+│ playlist_name varchar │
+│ num_tracks    integer │
+│ num_albums    integer │
+│ num_followers integer │
+│ modified_at   bigint  │
+└───────────────────────┘
+Run Time (s): real 0.005 user 0.005393 sys 0.000000
+```
