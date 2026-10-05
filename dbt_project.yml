@@ -6,5 +6,5 @@ model-paths: ['src/models']
 
 models:
   projet_spotify:
-    stating:
+    staging:
       +materialized: view
