@@ -72,3 +72,10 @@ spotify D DESCRIBE v_playlists;
 └───────────────────────┘
 
 ```
+
+## Prise en main
+
+**Exercice : Quelles playlists ont la plus forte audience ?**
+
+```sql
+```
