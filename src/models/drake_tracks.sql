@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('silver', 'tracks') }} WHERE artist_name ILIKE 'Drake'

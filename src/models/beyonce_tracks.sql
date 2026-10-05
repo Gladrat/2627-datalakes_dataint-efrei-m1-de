@@ -1,1 +1,1 @@
-SELECT * FROM {{ source('silver', 'tracks') }} WHERE artist_name ILIKE 'Beyoncé'
+SELECT * FROM {{ ref('stg_tracks') }} WHERE artist_name ILIKE 'Beyoncé'
