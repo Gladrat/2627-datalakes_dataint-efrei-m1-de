@@ -18,5 +18,5 @@ SELECT * FROM read_parquet('./*_playlists.parquet');
 ```
 
 ```SQL
-SELECT * FROM read_parquet('./*_playlists.parquet');
+SELECT * FROM read_parquet('./*_tracks.parquet');
 ```
