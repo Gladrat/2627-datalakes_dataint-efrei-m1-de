@@ -167,3 +167,14 @@ Si on veut consulter les données dans le warehouse :
   - `duckdb wharehouse/spotify.duckdb`
   - SELECT...
   - .table
+
+# Les responsabilités
+
+- Source : 32Go de JSON
+- Script python `src\main_opti.py` → env. 2Go de ``parquet``
+  - 2 tables : `playlists` & `tracks`
+- ``dbt`` → Transformer des requêtes SQL en vues/tables duckdb en 3 couches
+  - `staging` : Préparation des données (nettoyage, filtrage, enrichissement, etc.)
+  - `intermediate` : Préparation de requêtes pour exploitation
+  - `marts` : Agrégats métiers (business-level)
+- `notebook (pandas/duckdb)` → Lire les `marts` → Afficher un DataFrame / Data viz / etc.
