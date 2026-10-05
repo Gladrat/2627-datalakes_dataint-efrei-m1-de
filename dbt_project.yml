@@ -8,3 +8,7 @@ models:
   projet_spotify:
     staging:
       +materialized: view
+
+    intermediate:
+
+    marts:
