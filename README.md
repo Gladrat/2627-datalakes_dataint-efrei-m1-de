@@ -104,5 +104,25 @@ SELECT playlist_name,
 
 **Exercice : Enrichir les données**
 
-- Transformer la donnée `duration_ms` en minutes
+- Transformer la donnée `duration_ms` en minutes → `duration_min`
 - Stocker cette nouvelle donnée dans une vue complète `v_tracks_enriched`
+
+Résultat attendu :
+
+```sql
+spotify D DESCRIBE v_tracks_enriched;
+┌─────────────────────┐
+│      v_tracks       │
+│                     │
+│ playlist_id integer │
+│ track_uri   varchar │
+│ track_name  varchar │
+│ artist_name varchar │
+│ artist_uri  varchar │
+│ album_name  varchar │
+│ album_uri   varchar │
+│ duration_ms bigint  │
+│ position    integer │
+│ duration_min bigint │
+└─────────────────────┘
+```
