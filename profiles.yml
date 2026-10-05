@@ -1,0 +1,6 @@
+spotify_tp:
+  target: dev
+
+  outputs:
+    dev:
+      type: duckdb
